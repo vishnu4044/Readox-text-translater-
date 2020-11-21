@@ -80,3 +80,8 @@ medium schools. And we add a feature called text translate which can translate a
 text to user custom language . so it will be useful for the people while texting with foreigners
 Note: To the best of our knowledge this is the first application with this kind of features.
 
+
+# sample
+
+![image](https://drive.google.com/uc?export=view&id=1g_WGrVtVsLtAhfDyIo5MfoVNedlPEBF4)
+
