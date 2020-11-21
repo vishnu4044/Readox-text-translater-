@@ -96,12 +96,9 @@ Note: To the best of our knowledge this is the first application with this kind 
 # text translater screen
 ![image](https://drive.google.com/uc?export=view&id=1fZMPEvSrL6HjnHjO8_7Qx2c0YissV7Y0)
 
-# main screen 
-## we gave four options
-### pdf 
-### word
-### image
-### text translater
+# main screen
+
+# we gave four options
 
 ## PDF - it will take user pdf and convert it to  translated document or mp3 format
 
