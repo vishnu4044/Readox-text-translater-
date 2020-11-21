@@ -103,13 +103,18 @@ Note: To the best of our knowledge this is the first application with this kind 
 ### image
 ### text translater
 
-### PDF - it will take user pdf and convert it to  translated document or mp3 format
+## PDF - it will take user pdf and convert it to  translated document or mp3 format
 
 
-### WORD - it will take user document and convert it to translate give in document or mp3 format
+## WORD - it will take user document and convert it to translate give in document or mp3 format
 
 
-### IMAGE - it will take user image and read text in image translate  it print in document or mp3 format
+## IMAGE - it will take user image and read text in image translate  it print in document or mp3 format
 
 
-### text translater-it will take user text convert to user custom language 
+## text translater-it will take user text convert to user custom language 
+
+
+# Application link  to download apk:
+https://drive.google.com/file/d/1mxlzcyGSO7WAp5dSlGGfhFwy5Q5NvbLh/view?
+
