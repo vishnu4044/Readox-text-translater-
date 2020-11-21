@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Mobile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+  .w3-button {width:150px;}
+  
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 25px;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color:#cc0099;
+  border-radius: 25px;
+}
+.column {
+  float: left;
+  width: 40%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "<";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width:10px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  text-align: center;
+  background-color:'black';
+}
+
+img {
+  border-radius: 20px 20px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+  body{
+    background-color:#22203D;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper-header{
+  background:linear-gradient(to left bottom,#6B2BFD, #DE3083);
+  height: 30vh;
+  border-bottom-left-radius: 75px;
+  animation: rightToLeft 0.7s;
+}
+.nav-header{
+  padding:1rem 1rem 0 2rem;
+  margin-bottom: 4rem;
+}
+.title-header{
+  font-size:1.8rem;
+}
+.nav-header i{
+  float:right;
+  font-size:1.2rem;
+}
+.container-body-header{
+  position:absolute;
+  z-index:2;
+  padding:1rem 0 0 2rem;
+}
+.money-header{
+  display: block;
+  font-size:2.8rem;
+}
+.description-money{
+  margin-top:1rem;
+  font-size:0.8rem;
+}
+.vector-header{
+  position:absolute;
+  height: 200px;
+  right: 0;
+  top:calc(30vh - 200px);
+}
+.wrapper-body{
+  padding:1rem 1rem 0 2rem;
+  animation: leftToRight 0.7s;
+}
+.section{
+  margin: 0.5rem 0 1.5rem 0;
+}
+.title-apart{
+  margin:0.8rem;
+}
+.body-chronology{
+  width:100%;
+  font-size: 0;
+  border: 2px solid #2C2B4B;
+  border-radius: 15px;
+}
+.body-chronology button{
+  background-color:transparent;
+  color:white;
+  padding:7px;
+  margin:0;
+  border:none;
+  border-radius:15px;
+  width:25%;
+}
+.body-chronology button.active{
+  background-color: #2C2B4B;
+}
+.title-apart i{
+  float:right;
+  font-size:1.3rem;
+}
+.list-my-activity{
+  list-style: none;
+  margin:0;
+  padding:0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.list-my-activity li{
+  margin: 1.5rem 0;
+}
+.list-my-activity li i{
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  width:30px;
+  font-size:15px;
+  padding:0.3rem;
+  border-radius:50%;
+  background-color:#2C2B4B;
+  margin-right: 1rem;
+}
+.container-description-activity{
+  display: inline-block;
+  width:calc(100% - 4rem);
+}
+.name-activity{
+  margin-right: 1rem;
+}
+.price-activity{
+  float: right;
+  margin-right: 1rem;
+}
+.navbar{
+  position:fixed;
+  width:90%;
+  background-color:#2C2B4B;
+  text-align: center;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+  height: 4rem;
+  border-radius: 10px 10px 30px 30px;
+}
+.navbar i{
+  width:30%;
+  line-height: 4rem;
+  font-size:1.5rem;
+}
+.active-navbar{
+  color:#DE3083;
+}
+@keyframes rightToLeft {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+@keyframes leftToRight{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}</style>
+<body>
+  <div class="wrapper-header">
+    <div class="nav-header">
+      <span class="title-header"></span>
+    </div>
+    <div class="container-body-header">
+      <span class="money-header">READOX</span>
+      <span class="description-money">Read any thing from any where</span>
+    </div>
+    <img src="https://drive.google.com/uc?export=view&id=1bJV4l7rJGSE1mLXd4FPP9DfmTFv8OO7I" alt="vector" class="vector-header">
+  </div>
+  <div class="wrapper-body">
+     <form action = "/mean3" method = "post" enctype="multipart/form-data" name="form1"><br><br>
+
+      <center>
+        <div class="fileContainer">
+        <button class="w3-button w3-purple" style="border-radius: 25px;width: 150px;">upload img</button> 
+            <input type="file" name="file" class="w3-button w3-purple" accept="PDF" required>
+       </center></div><br>
+        <center><div class="w3-button w3-purple"style="border-radius: 20px"> languge 
+           <select  name="id" style="border-radius: 25px; width: 150px;">
+          <option value="te">telugu</option>
+          <option value="hi">hindi</option>
+          <option value="kn">kannada</option>
+          <option value="ta">tamil</option>
+           </select>
+         </div>
+   </center><br>
+    <center><div class="w3-button w3-purple"style="border-radius: 20px"> type
+           <select  name="id2" style="border-radius: 25px; width: 150px;">
+          <option value=".mp3">mp3</option>
+          <option value=".docx">doc</option>
+           </select>
+         </div>
+   </center><br>
+        <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+<br>
+      <center><button  style="border-radius: 25px"class="w3-button w3-purple" onclick="submitForms()" > translate</button></center>
+    </form>
+  </div><br><br>
+  <div class="navbar">
+     <a href="{{ url_for('.index') }}"> <i class="fas fa-paper-plane"></i></a>
+  </div>
+</body>
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 600);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+</script>
+
+<script type="text/javascript">submitForms = function(){
+  move();
+    document.forms["form1"].submit();
+}
+</script>
+</html>

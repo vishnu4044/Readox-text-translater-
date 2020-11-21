@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body><input type="text" name="text">
+    <a href="#" class="say">say it</a>
+    <audio src="" class="speech" hidden></audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('a.say').on('click',function(e){
+                e.preventDefault();
+                var text=$('input[name="text"]').val();
+                text=encodeURIComponent(text);
+                console.log(text);
+                var url="https://translate.google.com/#view=home&op=translate&sl=fr&tl=en&text="+text+
+                $('audio').attr('src',url).get(0).play();
+            });
+        });
+    </script>
+
+</body>
+</html>
