@@ -1,12 +1,4 @@
-# TEAM NAME : CODING NINJAS
-
-# TEAM MEMBERS:
-             VISHNU SAI BHONSLE
-             P.V.S VARUN KUMAR
-             BHOOMIKA N
-             DEEKSHA CHILUKURI
-             
- 
+              
 # Readox :Text translate Application.
 
 
@@ -112,6 +104,4 @@ Note: To the best of our knowledge this is the first application with this kind 
 ## text translater-it will take user text convert to user custom language 
 
 
-# Application link  to download apk:
-https://drive.google.com/file/d/1mxlzcyGSO7WAp5dSlGGfhFwy5Q5NvbLh/view?
 
